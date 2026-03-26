@@ -159,10 +159,11 @@ public class VendaController {
     private void listaMes(){
         ArrayList<Venda> vendas = new ArrayList<>();
 
-        int mes = io.pedeAno();
+        int ano = io.pedeAno();
+        int mes = io.pedeMes();
 
         for (Venda m : this.vendas) {
-            if(m.getMonth() == mes){
+            if((m.getYear() == ano) && (m.getMonth() == mes)){
                 vendas.add(m);
             }
         }
@@ -174,10 +175,12 @@ public class VendaController {
     private void listaDia(){
         ArrayList<Venda> vendas = new ArrayList<>();
 
-        int dia = io.pedeAno();
+        int ano = io.pedeAno();
+        int mes = io.pedeMes();
+        int dia = io.pedeDia();
 
         for (Venda m : this.vendas) {
-            if(m.getDay() == dia){
+            if((m.getYear() == ano) && (m.getMonth() == mes) && (m.getDay() == dia)){
                 vendas.add(m);
             }
         }

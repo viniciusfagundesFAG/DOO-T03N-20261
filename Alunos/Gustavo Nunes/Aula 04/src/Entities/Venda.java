@@ -11,6 +11,7 @@ public class Venda {
     private double valFin;
     private LocalDate dataVenda;
 
+    // Builder
     public Venda(int quant, double valVen, double desconto){
         this.id = contId++; // Gera id
         this.quant = quant;
@@ -20,7 +21,7 @@ public class Venda {
         this.dataVenda = LocalDate.now();
     }
 
-    // retornam
+    // Getters
     public int getYear() {
         return dataVenda.getYear();
     }
@@ -33,6 +34,7 @@ public class Venda {
         return dataVenda.getDayOfMonth();
     }
 
+    // To String
     @Override
     public String toString() {
         return String.format("  %-3d   %-10s   %-10d   %-10.2f   %-10.2f   %-10.2f  ",

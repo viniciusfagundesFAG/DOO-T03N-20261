@@ -100,8 +100,16 @@ public class VendaIO {
     }
 
     // Mês da listagem
+    public int pedeMes(){
+        System.out.println("\nMês: ");
+        return scanner.nextInt();
+    }
 
     // Dia da listagem
+    public int pedeDia(){
+        System.out.println("\nDia: ");
+        return scanner.nextInt();
+    }
 
     // Resultado de venda
     public void mostraResultadoVenda(double preco){
