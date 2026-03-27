@@ -2,7 +2,7 @@ import java.util.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class CalculadoraPlantas {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int opcao = 0;
