@@ -53,7 +53,9 @@ Um exemplo de linguagem declarativa é o Prolog
 
 
 
-```java
+\~\~\~java
+
+
 
 import java.util.Scanner;
 
@@ -63,31 +65,35 @@ public class DobroNumero {
 
 
 
-&#x20;   public static void main(String\[] args) {
+&#x20;  public static void main(String\\\[] args) {
 
 
 
-&#x20;       Scanner scan = new Scanner(System.in);
+&#x20;      Scanner scan = new Scanner(System.in);
 
 
 
-&#x20;       System.out.println("Digite um número:");
+&#x20;      System.out.println("Digite um número:");
 
-&#x20;       int numero = scan.nextInt();
-
-
-
-&#x20;       int resultado = numero \* 2;
+&#x20;      int numero = scan.nextInt();
 
 
 
-&#x20;       System.out.println("O dobro é: " + resultado);
+&#x20;      int resultado = numero \\\* 2;
 
-&#x20;   }
+
+
+&#x20;      System.out.println("O dobro é: " + resultado);
+
+
+
+&#x20;  }
+
+
 
 }
 
-```
+\~\~\~
 
 
 
@@ -110,7 +116,7 @@ diz exatamente como o problema deve ser resolvido:
 
 dobro(Numero, Resultado) :-
 
-&#x20;   Resultado is Numero \* 2.
+&#x20;  Resultado is Numero \* 2.
 
 
 
@@ -120,19 +126,21 @@ dobro(Numero, Resultado) :-
 
 main :-
 
-&#x20;   write('Digite um número: '),
-
-&#x20;   read(Numero),
 
 
+&#x20;  write('Digite um número: '),
 
-&#x20;   dobro(Numero, Resultado),
+&#x20;  read(Numero),
 
 
 
-&#x20;   write('O dobro é: '),
+&#x20;  dobro(Numero, Resultado),
 
-&#x20;   write(Resultado), nl.
+
+
+&#x20;  write('O dobro é: '),
+
+&#x20;  write(Resultado), nl.
 
 ```
 
