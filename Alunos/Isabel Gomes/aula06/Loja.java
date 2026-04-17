@@ -14,6 +14,7 @@ public class Loja {
 	
 	private List<Cliente> clientes = new ArrayList<>();
 	private List<Vendedor> vendedores = new ArrayList<>();
+	private List<Vendas> vendas = new ArrayList<>();
 	
 	
 	public Loja(String razaoSocial, String nomeFantasia, String cnpj, String cidade, String bairro, String rua) {
@@ -51,6 +52,17 @@ public class Loja {
 	public String getRua() {
 		return rua;
 	}
+	public List<Cliente> getClientes() { 
+		return clientes; 
+	}
+	
+    public List<Vendedor> getVendedores() {
+    	return vendedores; 
+    }
+    
+    public List<Vendas> getVendas() {
+    	return vendas; 
+    }
 	
 	
 	//setters
@@ -92,6 +104,8 @@ public class Loja {
 	}
 	
 	
+	//metodos
+	
 	public void contarClientes() {
 		int contaClientes = 0;
 		for(int i=0; i < clientes.size(); i++) {
@@ -101,10 +115,30 @@ public class Loja {
 	}
 	
 	
+	public void contarVendedores() {
+		int contaVendedor = 0;
+		for(int i = 0; i< vendedores.size(); i++) {
+			contaVendedor++;
+		}
+	}
 	
+	public void apresentarSe () {
+		System.out.println("\nNome Fantasia: " + nomeFantasia);
+		System.out.println("CNPJ: " + cnpj);
+		System.out.println("Endereco - Cidade: " + cidade 
+				+ ", Rua: " + rua + ", Bairro: " + bairro  );
+	}
 	
+	public void adicionarVendedor(Vendedor vendedor) {
+	    vendedores.add(vendedor);
+	}
+
+	public void adicionarCliente(Cliente cliente) {
+	    clientes.add(cliente);
+	}
 	
-	
+	public void adicionarVenda(Vendas venda) { 
+		vendas.add(venda); }
 	
 	
 	

@@ -23,6 +23,9 @@ public class Vendas {
 	private boolean desconto;
 	private LocalDate data;
 	
+	private Cliente cliente;
+    private Vendedor vendedor;
+	
 	public static final DateTimeFormatter FORMATO = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
 	
@@ -49,9 +52,13 @@ public class Vendas {
 		return desconto;
 	}
 	
-	/*public int getDesconto() {
-		return desconto;
-	}*/
+	public Cliente getCliente() { 
+		return cliente; 
+	}
+	
+    public Vendedor getVendedor() { 
+    	return vendedor; 
+    }
 	
 	
 	//setters
@@ -85,13 +92,13 @@ public class Vendas {
 	}
 	
 	
-	/*public double valorFinal() {
-		return valorFinal;
+	public void setCliente(Cliente cliente) { 
+		this.cliente = cliente; 
 	}
 	
-	public void setValorFinal(double valorFinal) {
-		this.valorFinal = valorFinal;
-	}*/
+    public void setVendedor(Vendedor vendedor) { 
+    	this.vendedor = vendedor; 
+    }
 	
 	
 	
@@ -112,6 +119,8 @@ public class Vendas {
 		}else {
 			System.out.println("\nNao possui desconto");
 		}
+		System.out.println("Vendedor : " + vendedor.getNome());
+        System.out.println("Cliente : " + cliente.getNome());
 	}
 
 	
