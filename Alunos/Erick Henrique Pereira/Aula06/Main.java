@@ -29,9 +29,9 @@ public class Main {
         Vendedor vendedor3 = new Vendedor("Fernanda", 35, "Loja C", endereco3, 2700.0);
         vendedores = List.of(vendedor1, vendedor2, vendedor3);
 
-        Loja loja1 = new Loja("Loja 1", "Razão Social 1", "12345678000100", endereco1, Main.vendedores, Main.clientes);
-        Loja loja2 = new Loja("Loja 2", "Razão Social 2", "22345678000100", endereco2, Main.vendedores, Main.clientes);
-        Loja loja3 = new Loja("Loja 3", "Razão Social 3", "32345678000100", endereco3, Main.vendedores, Main.clientes);
+        Loja loja1 = new Loja("Loja 1", "Razão Social 1", "12345678000100", endereco1, vendedores, clientes);
+        Loja loja2 = new Loja("Loja 2", "Razão Social 2", "22345678000100", endereco2, vendedores, clientes);
+        Loja loja3 = new Loja("Loja 3", "Razão Social 3", "32345678000100", endereco3, vendedores, clientes);
         lojas = List.of(loja1, loja2, loja3);
 
         System.out.println("Bem vindo ao sistema de gerencia de negócio");
