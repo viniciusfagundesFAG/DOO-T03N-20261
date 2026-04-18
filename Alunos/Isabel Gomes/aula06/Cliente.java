@@ -1,6 +1,6 @@
 package fag.objeto;
 
-public class Cliente {
+public class Cliente extends Pessoa {
 	
 	private String nome;
 	private int idade;
@@ -76,7 +76,7 @@ public class Cliente {
 	
 	//metodos
 	
-	
+	@override
 	public void apresentarse() {
 		System.out.println("Nome: " + nome);
 		System.out.println("Idade: "+ idade);

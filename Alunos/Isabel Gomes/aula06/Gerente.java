@@ -1,9 +1,7 @@
-package fag.objeto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Vendedor extends Pessoa {
-	
+public class Gerente extends Vendedor{
 	public String nome;
 	public int idade;
 	public String cidade;
@@ -15,7 +13,7 @@ public class Vendedor extends Pessoa {
 	public List<Double> salarioRecebido = new ArrayList<>();	
 	
 	
-	public Vendedor(String nome, String cidade, String bairro, String rua, String loja, 
+	public Gerente(String nome, String cidade, String bairro, String rua, String loja, 
 			int idade, double salarioBase) {
 		this.nome = nome;
 		this.cidade = cidade;
@@ -49,9 +47,6 @@ public class Vendedor extends Pessoa {
 		return salarioBase;
 	}
 	
-	/* double getSalarioRecebido() {
-		return salarioRecebido;
-	}*/
 	
 	public String getLoja() {
 		return loja;
@@ -111,7 +106,7 @@ public class Vendedor extends Pessoa {
 	
 	@override
 	public void apresentarse() {
-		System.out.println("\nNOme: " + nome);
+		System.out.println("\nNome: " + nome);
 		System.out.println("Idade: " + idade);
 		System.out.println("Loja: " + loja);
 	}
@@ -134,16 +129,11 @@ public class Vendedor extends Pessoa {
 	}
 	
 	
+	@override
 	public void calcularBonus() {
-		double bonus = salarioBase * 0.2;
+		double bonus = salarioBase * 0.35;
 		double salarioBonus = bonus+salarioBase;
 		System.out.println("\nSeu bonus e de R$: " + bonus + ", total com salario R$: " + salarioBonus);
 	}
-	
-	
-	
-	
-	
-	
 
 }
