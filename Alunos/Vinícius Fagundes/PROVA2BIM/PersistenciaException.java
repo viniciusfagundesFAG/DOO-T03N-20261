@@ -1,4 +1,3 @@
-package SWING.minha_serie;
 
 /** Falha recuperável durante a leitura ou gravação dos dados locais. */
 public class PersistenciaException extends Exception {

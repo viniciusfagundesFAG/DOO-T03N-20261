@@ -1,4 +1,3 @@
-package SWING.minha_serie;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;

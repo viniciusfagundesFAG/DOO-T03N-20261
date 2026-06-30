@@ -1,4 +1,3 @@
-package SWING.minha_serie;
 
 import java.time.LocalDate;
 import java.util.Comparator;

@@ -1,4 +1,3 @@
-package SWING.minha_serie;
 
 /** Listas pessoais mantidas pelo usuário. */
 public enum TipoLista {

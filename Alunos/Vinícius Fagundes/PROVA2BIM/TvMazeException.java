@@ -1,4 +1,3 @@
-package SWING.minha_serie;
 
 /** Falha recuperável ao consultar ou interpretar a API TVmaze. */
 public class TvMazeException extends Exception {

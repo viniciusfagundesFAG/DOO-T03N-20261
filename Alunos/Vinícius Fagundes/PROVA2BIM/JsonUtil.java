@@ -1,4 +1,3 @@
-package SWING.minha_serie;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
